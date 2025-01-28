@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Quizz App</title>
+  <link rel="stylesheet" href="../css/dashboard.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+  <div class="quizz-navbar">
+    <div><img src="../Images/techpatshala.svg" alt=""class="techpatshala-img"></div>
+    <div class="quizz-detail">
+      <div class="current-user"></div>
+      <div style="font-size: 1.5rem;">All Quizzes</div>
+      <button class="logout-btn" onclick="logoutBtn()"><i class="fa-solid fa-right-from-bracket"></i></button>
+      <div>
+        <img src="../Images/person.jpg" alt="" class="nav-personal-img"><br>
+      </div>
+    </div>
+  </div>
+
+  <div class="login-logout">
+      <p>Setting</p>
+      <a href="login.html">logout</a>
+  </div>
+
+  <div class="rank">
+    <h1>Wow Your Rank  <span class="current-rank"></span></h1>
+    <!-- <p>Supporting Text</p> -->
+   
+
+     <div class="rank-list">
+      <div class="rank2">
+        <div class="rank2-render">
+          <h2 class="rank2-ranking">#2</h2> <img src="../Images/person2.jpg" alt="" class="rank2-img">
+        </div>
+        <div class="rank2-data">
+          <h4 class="rank2-name"></h4>
+          <p class="rank2-score"></p>
+        </div>
+      </div>
+
+      <div class="rank1">
+        <div class="rank1-render">
+          <i class="fa-solid fa-crown rank1-ranking "></i> <img src="../Images/person.jpg" alt="" class="rank1-img">
+        </div>
+        <div class="rank1-data">
+          <h4 class="rank1-name"></h4>
+          <p class="rank1-score"></p>
+        </div>
+      </div>
+
+      <div class="rank3">
+        <div class="rank3-render">
+          <h2 class="rank3-ranking ">#3</h2> <img src="../Images/person3.jpg" alt="" class="rank3-img">
+        </div>
+        <div class="rank3-data">
+          <h4 class="rank3-name"></h4>
+          <p class="rank3-score"></p>
+        </div>
+      </div>
+     </div>
+
+<div class="prevoius-rank">
+    <div class="random-rank-4">
+      <h2>#4</h2>
+       <p class="rank4-name">Dipu</p>
+       <p class="rank4-score">10</p>
+    </div>
+    <div class="random-rank-5">
+      <h2>#5</h2>
+      <p class="rank5-name">Kasim</p>
+      <p class="rank5-score">8</p>
+    </div>
+    <div class="random-rank-6">
+      <h2>#6</h2>
+      <p class="rank6-name">shoaib</p>
+      <p class="rank6-score">6</p>
+    </div>
+  </div>
+  
+
+
+    <script src="../Js/script.js"></script>
+    <script>dashboardPage()</script>
+</body>
+
+</html>
